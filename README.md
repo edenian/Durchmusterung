@@ -6,5 +6,5 @@ This project aims to investigate the feasibility of employing quantum-enhanced s
 
 You can find our project proposal here: 
 
-[QHack_Project_Proposal_2023.pdf]: ./QHack_Project_Proposal_2023.pdf
+QHack_Project_Proposal_2023.pdf
 
