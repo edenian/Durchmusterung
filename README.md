@@ -46,6 +46,8 @@ Our quantum kernel learning approach for star classification shows improved perf
 <div align=center><img src="./assets/f1_qsvm.png" alt="f1_qsvm" width="500" />
 <div align=center><img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" width="500" />
 <div align=center><img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" width="500" />
+  </p>
+
 
 
 ### GPU Acceleration with cuQuantum for Quantum Kernel Encoding
