@@ -4,23 +4,34 @@
 
 Table of Contents
 
-1. [Introduction](#introduction)
-2. [Feature Engineering](#featureengineering)
-3. [Results](#Results)
-4. [Discussion](#Discussion)
-5. 
+* [Introduction](#sec1)
+* [Types of Stars and Current Methods of Classification](#typesofstarsandcurrentmethodsofclassification)
 
-## Introduction
+* [Feature Engineering](#featureengineering)
+
+* [Results](#Results)
+
+* [Discussion](#Discussion)
+
+
+
+<a name="sec1"></a>
+
+## Introduction <a name="sec1"></a>
 
 This project aims to investigate the feasibility of employing quantum-enhanced support vector machines (QSVMs) for stellar classification based on spectral data from the open source dataset[^1]. The core of the study involves designing and implementing a novel QSVM algorithm, which will be compared to traditional SVMs and Morgan–Keenan (MK) classification system, that is conventionally used in the field of stellar classification. Furthermore, the project seeks to explore the potential GPU acceleration techniques for the task of QSVM model training. Ultimately, this study will attempt to demonstrate the potential of quantum computing in enhancing the precision and efficiency of machine-learning approaches in astronomy.
 
 You can find our project proposal [here](./QHack_Project_Proposal_2023.pdf).
 
+## Types of Stars and Current Methods of Classification
+
+
+
 ## Feature Engineering
 
 In order to facilitate quantum kernel learning, classical pre-processing methods can be utilized to decrease the dimensionality of the data or extract pertinent features prior to quantum kernel training. This approach can decrease the computational load and enhance the model's accuracy by decreasing noise and uncertainty associated with the quantum data. A technique for preparing the data for quantum kernel learning is to convert the quantum state into a different representation that is more suitable for machine learning methods. This may involve applying quantum circuits or other transformations to the data to extract valuable features.
 
-There are 6 attributes provided in the original dataset. We believe only 2 of them, `B-V` and `Amag`, are relevant to the classification. They represents the B-V color index and absolute magnitude of the star, respectively. In addition,  we defined 4 more composite attributes. They are:
+There are 6 attributes provided in the original dataset. We believe only 2 of them, `B-V` and `Amag`, are relevant to the classification [^2]. They represents the B-V color index and absolute magnitude of the star, respectively. In addition,  we defined 4 more composite attributes. They are:
 ```math
 \begin{align}
 		&\texttt{Amag\_SQ} = \texttt{Amag}^2\\
@@ -92,5 +103,6 @@ Logistic Regression is a popular classification algorithm for binary outcomes, s
 
 
 
-[^1]: W.-F. Ku, Star categorization giants and dwarfs dataset, vinesmsuic. https://www.kaggle.com/ datasets/vinesmsuic/star-categorization-giants-and-dwarfs, Jul 2020.
+[^1]: W.-F. Ku, *Star categorization giants and dwarfs dataset*, vinesmsuic. https://www.kaggle.com/datasets/vinesmsuic/star-categorization-giants-and-dwarfs, Jul 2020.
+[^2]: D. F. Gray, *The observation and analysis of stellar photospheres*, Cambridge University Press, 2021.
 
