@@ -5,7 +5,7 @@
 Table of Contents
 
 1. [Introduction](#introduction)
-2. [Feature Engineering](#feature engineering)
+2. [Feature Engineering](#featureengineering)
 3. [Results](#Results)
 4. [Discussion](#Discussion)
 5. 
@@ -91,8 +91,6 @@ Logistic Regression is a popular classification algorithm for binary outcomes, s
 ![bench_confu](./assets/bench_confu.png)
 
 
-
-# Reference
 
 [^1]: W.-F. Ku, Star categorization giants and dwarfs dataset, vinesmsuic. https://www.kaggle.com/ datasets/vinesmsuic/star-categorization-giants-and-dwarfs, Jul 2020.
 
