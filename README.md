@@ -22,7 +22,7 @@
 
    ​	[Classical Model for Benchmarking with multi-labelled classification](#sec52)
    	
-	[Result of Quantum Kernel Learning for Multi-labelled Classification](#sec53)
+   ​	[Result of Quantum Kernel Learning for Multi-labelled Classification](#sec53)
 
    
 
