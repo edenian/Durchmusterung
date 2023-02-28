@@ -6,10 +6,13 @@ Table of Contents
 
 1. [Introduction](#introduction)
 2. [Feature Engineering](#feature engineering)
+3. [Results](#Results)
+4. [Discussion](#Discussion)
+5. 
 
 ## Introduction
 
-This project aims to investigate the feasibility of employing quantum-enhanced support vector machines (QSVMs) for stellar classification based on spectral data from the open source dataset\cite{Ku_KaggleStellar}. The core of the study involves designing and implementing a novel QSVM algorithm, which will be compared to traditional SVMs and Morgan–Keenan (MK) classification system, that is conventionally used in the field of stellar classification. Furthermore, the project seeks to explore the potential GPU acceleration techniques for the task of QSVM model training. Ultimately, this study will attempt to demonstrate the potential of quantum computing in enhancing the precision and efficiency of machine-learning approaches in astronomy.
+This project aims to investigate the feasibility of employing quantum-enhanced support vector machines (QSVMs) for stellar classification based on spectral data from the open source dataset[^1]. The core of the study involves designing and implementing a novel QSVM algorithm, which will be compared to traditional SVMs and Morgan–Keenan (MK) classification system, that is conventionally used in the field of stellar classification. Furthermore, the project seeks to explore the potential GPU acceleration techniques for the task of QSVM model training. Ultimately, this study will attempt to demonstrate the potential of quantum computing in enhancing the precision and efficiency of machine-learning approaches in astronomy.
 
 You can find our project proposal [here](./QHack_Project_Proposal_2023.pdf).
 
@@ -75,9 +78,13 @@ KNN is a widely used non-parametric algorithm for classification and regression 
 
 #### Logistic Regression (LR)
 
+Logistic Regression is a popular classification algorithm for binary outcomes, such as predicting whether an email is spam or not. It models the probability of the positive outcome using a logistic function and estimates the parameters using maximum likelihood estimation. Logistic Regression can also provide insights into feature importance, which can help identify the most relevant features for the task at hand and interpret the model's results. The figure below shows the feature importance of our classification LR model.
+
 <p align=center><img src="./assets/LR_ana.png" alt="LR_ana" width="500" /></p>
 
 ### Classical Model for Benchmarking with multi-labelled classification
+
+
 
 ![two_class_bench](./assets/two_class_bench.png)
 
@@ -87,5 +94,5 @@ KNN is a widely used non-parametric algorithm for classification and regression 
 
 # Reference
 
-
+[^1]: W.-F. Ku, Star categorization giants and dwarfs dataset, vinesmsuic. https://www.kaggle.com/ datasets/vinesmsuic/star-categorization-giants-and-dwarfs, Jul 2020.
 
