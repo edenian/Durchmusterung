@@ -42,11 +42,10 @@ A detailed analysis of the relationship between target classification and other 
 
 Our quantum kernel learning approach for star classification shows improved performance with increasing training data, surpassing the classical kernel in accuracy, f1 score, and specificity. The quantum kernel remains stable at around 0.9 in sensitivity, indicating its robustness. Our results suggest the superiority of the quantum kernel, which is more stable than the classical kernel, due to its ability to efficiently capture and process complex features.
 
-<div align=center><img src="./assets/accuracy_qsvm.png" alt="accuracy_qsvm" width="500" />
-<div align=center><img src="./assets/f1_qsvm.png" alt="f1_qsvm" width="500" />
-<div align=center><img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" width="500" />
-<div align=center><img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" width="500" />
-  </p>
+<div align=center><img src="./assets/accuracy_qsvm.png" alt="accuracy_qsvm" width="500" /></p>
+<div align=center><img src="./assets/f1_qsvm.png" alt="f1_qsvm" width="500" /></p>
+<div align=center><img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" width="500" /></p>
+<div align=center><img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" width="500" /></p>
 
 
 
