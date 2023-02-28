@@ -17,6 +17,17 @@ You can find our project proposal [here](./QHack_Project_Proposal_2023.pdf).
 
 ## Feature Engineering
 
+In order to facilitate quantum kernel learning, classical pre-processing methods can be utilized to decrease the dimensionality of the data or extract pertinent features prior to quantum kernel training. This approach can decrease the computational load and enhance the model's accuracy by decreasing noise and uncertainty associated with the quantum data. A technique for preparing the data for quantum kernel learning is to convert the quantum state into a different representation that is more suitable for machine learning methods. This may involve applying quantum circuits or other transformations to the data to extract valuable features.
+
+There are 6 attributes provided in the original dataset. We believe only 2 of them, `B-V` and `Amag`, are relevant to the classification. They represents the B-V color index and absolute magnitude of the star, respectively. In addition,  we defined 4 more composite attributes. They are:
+$$
+&\texttt{Amag\_SQ} = \texttt{Amag}^2\\
+    &\texttt{B-V\_SQ} = \texttt{B-V}^2\\
+    &\texttt{B-V+Amag} = \texttt{B-V} + \texttt{Amag}\\
+    &\texttt{B-V-Amag} = \texttt{B-V} - \texttt{Amag}
+$$
+The relation between those 6 attributes and the classification are shown in the figures below.
+
 ![relation1](./assets/relation1.png)
 
 ![relation2](./assets/relation2.png)
@@ -38,6 +49,7 @@ From the figures we can find that QSVM has the trend to be overall more accurate
 <div align=center><img src="./assets/f1_qsvm.png" alt="f1_qsvm" width="500" />
 <div align=center><img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" width="500" />
 <div align=center><img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" width="500" />
+
 
 
 
