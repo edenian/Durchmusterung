@@ -34,10 +34,10 @@ We employed a Second-order Pauli-Z evolution circuit, which utilizes two-qubit Z
 Below, we present the results of four measures - accuracy, F1 index, specificity, and sensitivity - to demonstrate the effectiveness of our QSVM model. For comparison, we also include the corresponding measures obtained from the classical SVM (CSVM) model in the same figures.
 
 From the figures we can find that QSVM has the trend to be overall more accurate than the CSVM. When the size of dataset is small, all measures fluctuate dramatically. 
-<div align=center>!<img src="./assets/accuracy_qsvm.png" alt="accuracy_qsvm" width="500" />
-<div align=center>!<img src="./assets/f1_qsvm.png" alt="f1_qsvm" width="500" />
-<div align=center>!<img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" width="500" />
-<div align=center>!<img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" width="500" />
+<div align=center><img src="./assets/accuracy_qsvm.png" alt="accuracy_qsvm" width="500" />
+<div align=center><img src="./assets/f1_qsvm.png" alt="f1_qsvm" width="500" />
+<div align=center><img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" width="500" />
+<div align=center><img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" width="500" />
 
 
 
