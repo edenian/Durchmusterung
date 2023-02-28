@@ -36,12 +36,6 @@ A detailed analysis of the relationship between target classification and other 
 
 ![relation3](./assets/relation3.png)
 
-
-
-## Quantum circuit
-
-We employed a Second-order Pauli-Z evolution circuit, which utilizes two-qubit ZZ interaction to encode classical data into a quantum state. The circuit was repeated twice and entanglement was maximized. The QuantumKernel class was then used to compute the kernel function. The number of qubits is 6, which is equal to the number of features.
-
 ## Results
 
 ### Quantum Kernel Learning for Large Dataset
@@ -54,12 +48,35 @@ Our quantum kernel learning approach for star classification shows improved perf
 <div align=center><img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" width="500" />
 ### GPU Acceleration with cuQuantum for Quantum Kernel Encoding
 
+Quantum computing has potential in solving complex machine learning problems, but training quantum models is computationally intensive and requires specialized hardware. Quantum kernel learning, a technique that pre-processes data using classical hardware before training a quantum kernel, has shown promising results. CuQuantum is a software library that enables training of quantum models on NVIDIA GPUs, leading to faster and more accurate predictions. The speedup is due to the parallel processing power of GPUs, and using CuQuantum and CUDA also reduces computational cost, making quantum kernel learning more accessible and scalable.
+
+The following figure shows the GPU speedup for kernel encoding by cuQuantum compared to CPU:
+
+<img src="./assets/runtime.png" alt="runtime" width="500" />
 
 
 
+# Discussion
+
+### Classical Model for Benchmarking with two-labelled classification
+
+#### K-Nearest Neighbors (KNN)
+
+KNN is a widely used non-parametric algorithm for classification and regression tasks, including star classification. It works by finding the K closest neighbors based on features such as magnitude, color, and distance, and assigning the class of the test star based on the most common class among the neighbors. However, the performance of KNN depends on the choice of K and distance metric, which can lead to overfitting or underfitting
+
+ In the context of star classification, KNN has shown promising results due to its simplicity and interpretability. The performance of our KNN model on the large star dataset is shown below. Accuracy increases as K decreases, with the highest accuracy of 86.5% achieved when K = 15. We have selected K = 15 as the optimal parameter for star classification. However, the optimal value of K can vary depending on the dataset and classification problem. Nonetheless, KNN remains a simple and effective classification algorithm that can provide accurate result
+
+![knn_result](./assets/knn_result.png)
+
+#### Logistic Regression (LR)
 
 
-## Reference
+
+### Classical Model for Benchmarking with multi-labelled classification
+
+
+
+# Reference
 
 
 
