@@ -21,6 +21,8 @@
    ​	[Classical Model for Benchmarking with two-labelled classification](#sec51)
 
    ​	[Classical Model for Benchmarking with multi-labelled classification](#sec52)
+   	
+	[Result of Quantum Kernel Learning for Multi-labelled Classification](#sec53)
 
    
 
@@ -118,7 +120,7 @@ the accuracy drops to 0.78 and 0.79 for KNN and LR, respectively.
 
 ![bench_confu](./assets/bench_confu.png)
 
-### Result of Quantum Kernel Learning for Multi-labelled Classification
+### Result of Quantum Kernel Learning for Multi-labelled Classification <a name="sec53"></a>
 
 With quantum kernel learning, we can achieve an accuracy of approximately 0.81, which is 5% higher than the classical benchmarking methods. Furthermore, we observed that our quantum model exhibits improved classification performance in star types A\&F and K\&M (shown in the figure below), as compared to KNN and LR, respectively.
 
