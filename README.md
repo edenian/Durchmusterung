@@ -10,9 +10,25 @@ This project aims to investigate the feasibility of employing quantum-enhanced s
 
 You can find our project proposal [here](./QHack_Project_Proposal_2023.pdf).
 
+## Feature Engineering
+
 ## Quantum circuit
 
 We employed a Second-order Pauli-Z evolution circuit, which utilizes two-qubit ZZ interaction to encode classical data into a quantum state. The circuit was repeated twice and entanglement was maximized. The QuantumKernel class was then used to compute the kernel function. The number of qubits is 6, which is equal to the number of features.
+
+## Results
+
+Below, we present the results of four measures - accuracy, F1 index, specificity, and sensitivity - to demonstrate the effectiveness of our QSVM model. For comparison, we also include the corresponding measures obtained from the classical SVM (CSVM) model in the same figures.
+
+From the figures we can find that QSVM has the trend to be overall more accurate than the CSVM. When the size of dataset is small, all measures fluctuate dramatically and 
+
+<img src="./assets/accuracy_qsvm.png" alt="accuracy_qsvm" style="zoom: 50%;" />
+
+<img src="./assets/f1_qsvm.png" alt="f1_qsvm" style="zoom: 50%;" />
+
+<img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" style="zoom:50%;" />
+
+<img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" style="zoom:50%;" />
 
 
 
