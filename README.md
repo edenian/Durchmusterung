@@ -127,6 +127,31 @@ With quantum kernel learning, we can achieve an accuracy of approximately 0.81, 
 <p align=center><img src="./assets/QSVM_multi.png" alt="QSVM_multi" width=500 /></p>
 
 
+### QCNN for Multi-labeled Star Classification <a name="sec53"></a>
+
+<p align=center><img src="./assets/neural_net.png" alt="neural_net" width=500 /></p>
+
+The provided code defines a neural network model that is used for quantum circuit learning. The model consists of several layers of convolutional and linear (fully connected) layers, along with a custom-defined TorchCircuit module that is used to implement quantum circuits. The architecture of the model is as follows:
+```python
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.conv1 = nn.Conv1d(1, 16, kernel_size=2)
+        self.pool1 = nn.MaxPool1d(kernel_size=1)
+        self.conv2 = nn.Conv1d(16, 32, kernel_size=2)
+        self.pool2 = nn.MaxPool1d(kernel_size=1)
+        self.fc1 = nn.Linear(128, 50)
+        self.fc2 = nn.Linear(50, NUM_QUBITS)
+        self.qc = TorchCircuit.apply
+        self.qcsim = nn.Linear(NUM_QUBITS, 1)
+        self.fc3 = nn.Linear(1, 4)
+```
+
+<p align=center><img src="./assets/qcnntrain.png" alt="qcnntrain" width=500 /></p>
+
+At the beginning of training, the model has a loss of 2.5351 and an accuracy of 53.29 percent. As the model trains, we can see that the loss decreases and the accuracy increases with each epoch. After the first epoch, the model's accuracy improves significantly to 68.50 percent, and the loss also drops to 2.4993. The model continues to improve its accuracy in subsequent epochs, reaching 74.13 prcent accuracy by the end of training. The loss also steadily decreases, indicating that the model is learning to make better predictions.
+
+
 [^1]: W.-F. Ku, *Star categorization giants and dwarfs dataset*, vinesmsuic. https://www.kaggle.com/datasets/vinesmsuic/star-categorization-giants-and-dwarfs, Jul 2020.
 [^2]: D. F. Gray, *The observation and analysis of stellar photospheres*, Cambridge University Press, 2021.
 [^3]: Hoskin, M. The Cambridge concise history of astronomy. Cambridge University Press, 1999.
