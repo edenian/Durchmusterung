@@ -4,14 +4,25 @@
 
 Table of Contents
 
-* [Introduction](#sec1)
-* [Types of Stars and Current Methods of Classification](#typesofstarsandcurrentmethodsofclassification)
+1. [Introduction](#sec1)
 
-* [Feature Engineering](#featureengineering)
+2. [Types of Stars and Current Methods of Classification](#sec2)
 
-* [Results](#Results)
+3. [Feature Engineering](#sec3)
 
-* [Discussion](#Discussion)
+4. [Results](#sec4)
+
+   ​	[Quantum Kernel Learning for Large Dataset](#sec41)
+
+   ​	[GPU Acceleration with cuQuantum for Quantum Kernel Encoding](#sec42)
+
+5. [Discussion](#sec5)
+
+   ​	[Classical Model for Benchmarking with two-labelled classification](#sec51)
+
+   ​	[Classical Model for Benchmarking with multi-labelled classification](#sec52)
+
+   
 
 
 
@@ -23,11 +34,11 @@ This project aims to investigate the feasibility of employing quantum-enhanced s
 
 You can find our project proposal [here](./QHack_Project_Proposal_2023.pdf).
 
-## Types of Stars and Current Methods of Classification
+## Types of Stars and Current Methods of Classification <a name="sec2"></a>
 
 
 
-## Feature Engineering
+## Feature Engineering<a name="sec3"></a>
 
 In order to facilitate quantum kernel learning, classical pre-processing methods can be utilized to decrease the dimensionality of the data or extract pertinent features prior to quantum kernel training. This approach can decrease the computational load and enhance the model's accuracy by decreasing noise and uncertainty associated with the quantum data. A technique for preparing the data for quantum kernel learning is to convert the quantum state into a different representation that is more suitable for machine learning methods. This may involve applying quantum circuits or other transformations to the data to extract valuable features.
 
@@ -50,9 +61,9 @@ A detailed analysis of the relationship between target classification and other 
 
 ![relation3](./assets/relation3.png)
 
-## Results
+## Results <a name="sec4"></a>
 
-### Quantum Kernel Learning for Large Dataset
+### Quantum Kernel Learning for Large Dataset <a name="sec41"></a>
 
 Our quantum kernel learning approach for star classification shows improved performance with increasing training data, surpassing the classical kernel in accuracy, f1 score, and specificity. The quantum kernel remains stable at around 0.9 in sensitivity, indicating its robustness. Our results suggest the superiority of the quantum kernel, which is more stable than the classical kernel, due to its ability to efficiently capture and process complex features.
 
@@ -63,7 +74,7 @@ Our quantum kernel learning approach for star classification shows improved perf
 
 
 
-### GPU Acceleration with cuQuantum for Quantum Kernel Encoding
+### GPU Acceleration with cuQuantum for Quantum Kernel Encoding<a name="sec42"></a>
 
 Quantum computing has potential in solving complex machine learning problems, but training quantum models is computationally intensive and requires specialized hardware. Quantum kernel learning, a technique that pre-processes data using classical hardware before training a quantum kernel, has shown promising results. CuQuantum is a software library that enables training of quantum models on NVIDIA GPUs, leading to faster and more accurate predictions. The speedup is due to the parallel processing power of GPUs, and using CuQuantum and CUDA also reduces computational cost, making quantum kernel learning more accessible and scalable.
 
@@ -73,11 +84,11 @@ The following figure shows the GPU speedup for kernel encoding by cuQuantum comp
 
 
 
-# Discussion
+# Discussion <a name="sec5"></a>
 
-### Classical Model for Benchmarking with two-labelled classification
+### Classical Model for Benchmarking with two-labelled classification<a name="sec51"></a>
 
-#### K-Nearest Neighbors (KNN)
+#### K-Nearest Neighbors (KNN)<a name="sec511"></a>
 
 KNN is a widely used non-parametric algorithm for classification and regression tasks, including star classification. It works by finding the K closest neighbors based on features such as magnitude, color, and distance, and assigning the class of the test star based on the most common class among the neighbors. However, the performance of KNN depends on the choice of K and distance metric, which can lead to overfitting or underfitting
 
@@ -87,13 +98,13 @@ KNN is a widely used non-parametric algorithm for classification and regression 
 
 
 
-#### Logistic Regression (LR)
+#### Logistic Regression (LR)<a name="sec512"></a>
 
 Logistic Regression is a popular classification algorithm for binary outcomes, such as predicting whether an email is spam or not. It models the probability of the positive outcome using a logistic function and estimates the parameters using maximum likelihood estimation. Logistic Regression can also provide insights into feature importance, which can help identify the most relevant features for the task at hand and interpret the model's results. The figure below shows the feature importance of our classification LR model.
 
 <p align=center><img src="./assets/LR_ana.png" alt="LR_ana" width="500" /></p>
 
-### Classical Model for Benchmarking with multi-labelled classification
+### Classical Model for Benchmarking with multi-labelled classification<a name="sec52"></a>
 
 
 
