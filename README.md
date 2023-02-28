@@ -4,29 +4,27 @@
 
 ## Table of Contents
 
-* [Introduction](#sec1)
+1. [Introduction](#sec1)
 
-* [Types of Stars and Current Methods of Classification](#sec2)
+2. [Types of Stars and Current Methods of Classification](#sec2)
 
-* [Feature Engineering](#sec3)
+3. [Feature Engineering](#sec3)
 
-* [Results](#sec4)
+4. [Results](#sec4)
 
-  ​	[Quantum Kernel Learning for Large Dataset](#sec41)
+   ​	[Quantum Kernel Learning for Large Dataset](#sec41)
 
-  ​	[GPU Acceleration with cuQuantum for Quantum Kernel Encoding](#sec42)
+   ​	[GPU Acceleration with cuQuantum for Quantum Kernel Encoding](#sec42)
 
-* [Discussion](#sec5)
+5. [Discussion](#sec5)
 
-  ​	[Classical Model for Benchmarking with two-labelled classification](#sec51)
+   ​	[Classical Model for Benchmarking with two-labelled classification](#sec51)
 
-  ​	[Classical Model for Benchmarking with multi-labelled classification](#sec52)
+   ​	[Classical Model for Benchmarking with multi-labelled classification](#sec52)
+
+   
 
 
-
-
-
-<a name="sec1"></a>
 
 ## Introduction <a name="sec1"></a>
 
@@ -36,13 +34,17 @@ You can find our project proposal [here](./QHack_Project_Proposal_2023.pdf).
 
 ## Types of Stars and Current Methods of Classification <a name="sec2"></a>
 
+Stellar classification is based on a star's spectrum, which reveals its temperature, luminosity, and chemical composition[^2]. The Harvard spectral classification divides stars into seven categories based on the strengths of their spectral lines. Each spectral type corresponds to a range of temperatures and luminosities, and stars can be further divided based on their luminosity class. The Hertzsprung-Russell Diagram is a fundamental tool for studying stellar evolution, and stars are classified based on their spectral types and luminosities (shown below[^3]). Human analysis of spectra can be time-consuming and subject to variability, so machine learning techniques like SVMs have been used to automate the process. However, traditional SVMs have limited performance and scalability, so there is a need to explore novel approaches like quantum-enhanced SVMs.
+
+<img src="./assets/hrdiagram1.jpeg" alt="hrdiagram1" width=500 />
+
 
 
 ## Feature Engineering<a name="sec3"></a>
 
 In order to facilitate quantum kernel learning, classical pre-processing methods can be utilized to decrease the dimensionality of the data or extract pertinent features prior to quantum kernel training. This approach can decrease the computational load and enhance the model's accuracy by decreasing noise and uncertainty associated with the quantum data. A technique for preparing the data for quantum kernel learning is to convert the quantum state into a different representation that is more suitable for machine learning methods. This may involve applying quantum circuits or other transformations to the data to extract valuable features.
 
-There are 6 attributes provided in the original dataset. We believe only 2 of them, `B-V` and `Amag`, are relevant to the classification [^2]. They represents the B-V color index and absolute magnitude of the star, respectively. In addition,  we defined 4 more composite attributes. They are:
+There are 6 attributes provided in the original dataset. We believe only 2 of them, `B-V` and `Amag`, are relevant to the classification. They represents the B-V color index and absolute magnitude of the star, respectively. In addition,  we defined 4 more composite attributes. They are:
 ```math
 \begin{align}
 		&\texttt{Amag\_SQ} = \texttt{Amag}^2\\
@@ -116,4 +118,5 @@ Logistic Regression is a popular classification algorithm for binary outcomes, s
 
 [^1]: W.-F. Ku, *Star categorization giants and dwarfs dataset*, vinesmsuic. https://www.kaggle.com/datasets/vinesmsuic/star-categorization-giants-and-dwarfs, Jul 2020.
 [^2]: D. F. Gray, *The observation and analysis of stellar photospheres*, Cambridge University Press, 2021.
+[^3]: Hoskin, M. The Cambridge concise history of astronomy. Cambridge University Press, 1999.
 
