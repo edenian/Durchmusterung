@@ -46,6 +46,8 @@ Our quantum kernel learning approach for star classification shows improved perf
 <div align=center><img src="./assets/f1_qsvm.png" alt="f1_qsvm" width="500" />
 <div align=center><img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" width="500" />
 <div align=center><img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" width="500" />
+
+
 ### GPU Acceleration with cuQuantum for Quantum Kernel Encoding
 
 Quantum computing has potential in solving complex machine learning problems, but training quantum models is computationally intensive and requires specialized hardware. Quantum kernel learning, a technique that pre-processes data using classical hardware before training a quantum kernel, has shown promising results. CuQuantum is a software library that enables training of quantum models on NVIDIA GPUs, leading to faster and more accurate predictions. The speedup is due to the parallel processing power of GPUs, and using CuQuantum and CUDA also reduces computational cost, making quantum kernel learning more accessible and scalable.
