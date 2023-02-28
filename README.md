@@ -35,15 +35,18 @@ Below, we present the results of four measures - accuracy, F1 index, specificity
 
 From the figures we can find that QSVM has the trend to be overall more accurate than the CSVM. When the size of dataset is small, all measures fluctuate dramatically. 
 <center class="half">
-
-<img src="./assets/accuracy_qsvm.png" alt="accuracy_qsvm" width="500" />
-
-<img src="./assets/f1_qsvm.png" alt="f1_qsvm" width="500" />
-
-<img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" width="500" />
-
-<img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" width="500" />
+	<img src="./assets/accuracy_qsvm.png" alt="accuracy_qsvm" width="500" />
 </center>
+<center class="half">
+	<img src="./assets/f1_qsvm.png" alt="f1_qsvm" width="500" />
+</center>
+<center class="half">
+	<img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" width="500" />
+</center>
+<center class="half">
+	<img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" width="500" />
+</center>
+
 
 
 
