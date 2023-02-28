@@ -2,27 +2,27 @@
 
 ![Logo](durchmusterung.png)
 
-Table of Contents
+## Table of Contents
 
-1. [Introduction](#sec1)
+[Introduction](#sec1)
 
-2. [Types of Stars and Current Methods of Classification](#sec2)
+[Types of Stars and Current Methods of Classification](#sec2)
 
-3. [Feature Engineering](#sec3)
+[Feature Engineering](#sec3)
 
-4. [Results](#sec4)
+[Results](#sec4)
 
-   ​	[Quantum Kernel Learning for Large Dataset](#sec41)
+​	[Quantum Kernel Learning for Large Dataset](#sec41)
 
-   ​	[GPU Acceleration with cuQuantum for Quantum Kernel Encoding](#sec42)
+​	[GPU Acceleration with cuQuantum for Quantum Kernel Encoding](#sec42)
 
-5. [Discussion](#sec5)
+[Discussion](#sec5)
 
-   ​	[Classical Model for Benchmarking with two-labelled classification](#sec51)
+​	[Classical Model for Benchmarking with two-labelled classification](#sec51)
 
-   ​	[Classical Model for Benchmarking with multi-labelled classification](#sec52)
+​	[Classical Model for Benchmarking with multi-labelled classification](#sec52)
 
-   
+
 
 
 
