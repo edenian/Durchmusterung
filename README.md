@@ -22,10 +22,10 @@ In order to facilitate quantum kernel learning, classical pre-processing methods
 There are 6 attributes provided in the original dataset. We believe only 2 of them, `B-V` and `Amag`, are relevant to the classification. They represents the B-V color index and absolute magnitude of the star, respectively. In addition,  we defined 4 more composite attributes. They are:
 ```math
 \begin{align}
-		\texttt{Amag\_SQ} = \texttt{Amag}^2\\
-    \texttt{B-V\_SQ} = \texttt{B-V}^2\\
-    \texttt{B-V+Amag} = \texttt{B-V} + \texttt{Amag}\\
-    \texttt{B-V-Amag} = \texttt{B-V} - \texttt{Amag}
+		&\texttt{Amag\_SQ} = \texttt{Amag}^2\\
+    &\texttt{B-V\_SQ} = \texttt{B-V}^2\\
+    &\texttt{B-V+Amag} = \texttt{B-V} + \texttt{Amag}\\
+    &\texttt{B-V-Amag} = \texttt{B-V} - \texttt{Amag}
 \end{align}
 ```
 
