@@ -4,6 +4,11 @@
 
 [TOC]
 
+Table of Contents
+
+1. [Introduction](#introduction)
+2. [Feature Engineering](#Feature Engineering)
+
 ## Introduction
 
 This project aims to investigate the feasibility of employing quantum-enhanced support vector machines (QSVMs) for stellar classification based on spectral data from the open source dataset\cite{Ku_KaggleStellar}. The core of the study involves designing and implementing a novel QSVM algorithm, which will be compared to traditional SVMs and Morgan–Keenan (MK) classification system, that is conventionally used in the field of stellar classification. Furthermore, the project seeks to explore the potential GPU acceleration techniques for the task of QSVM model training. Ultimately, this study will attempt to demonstrate the potential of quantum computing in enhancing the precision and efficiency of machine-learning approaches in astronomy.
@@ -30,13 +35,13 @@ Below, we present the results of four measures - accuracy, F1 index, specificity
 
 From the figures we can find that QSVM has the trend to be overall more accurate than the CSVM. When the size of dataset is small, all measures fluctuate dramatically. 
 
-<img src="./assets/accuracy_qsvm.png" alt="accuracy_qsvm" style="zoom: 25%;" />
+<img src="./assets/accuracy_qsvm.png" alt="accuracy_qsvm"  /><img src="./assets/f1_qsvm.png" alt="f1_qsvm"  />
 
-<img src="./assets/f1_qsvm.png" alt="f1_qsvm" style="zoom: 25%;" />
 
-<img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" style="zoom: 25%;" />
 
-<img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" style="zoom: 25%;" />
+<img src="./assets/specificty_qsvm.png" alt="specificty_qsvm"  />
+
+<img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm"  />
 
 ## Reference
 
