@@ -75,9 +75,13 @@ KNN is a widely used non-parametric algorithm for classification and regression 
 
 #### Logistic Regression (LR)
 
-
+<p align=center><img src="./assets/LR_ana.png" alt="LR_ana" width="500" /></p>
 
 ### Classical Model for Benchmarking with multi-labelled classification
+
+![two_class_bench](./assets/two_class_bench.png)
+
+![bench_confu](./assets/bench_confu.png)
 
 
 
