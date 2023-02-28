@@ -2,12 +2,10 @@
 
 ![Logo](durchmusterung.png)
 
-[TOC]
-
 Table of Contents
 
 1. [Introduction](#introduction)
-2. [Feature Engineering](#Feature Engineering)
+2. [Feature Engineering](#feature engineering)
 
 ## Introduction
 
@@ -30,7 +28,7 @@ There are 6 attributes provided in the original dataset. We believe only 2 of th
 ```
 
 
-The relation between those 6 attributes and the classification are shown in the figures below.
+A detailed analysis of the relationship between target classification and other features is necessary, and a figure providing a visual representation of this relationship is shown below. We can find that composite features play a critical role in successfully amplifying even small variations, leading to further separation of peaks in the data. This suggests that composite features can improve the accuracy of target classification, especially in challenging cases.
 
 ![relation1](./assets/relation1.png)
 
@@ -46,13 +44,16 @@ We employed a Second-order Pauli-Z evolution circuit, which utilizes two-qubit Z
 
 ## Results
 
-Below, we present the results of four measures - accuracy, F1 index, specificity, and sensitivity - to demonstrate the effectiveness of our QSVM model. For comparison, we also include the corresponding measures obtained from the classical SVM (CSVM) model in the same figures.
+### Quantum Kernel Learning for Large Dataset
 
-From the figures we can find that QSVM has the trend to be overall more accurate than the CSVM. When the size of dataset is small, all measures fluctuate dramatically. 
+Our quantum kernel learning approach for star classification shows improved performance with increasing training data, surpassing the classical kernel in accuracy, f1 score, and specificity. The quantum kernel remains stable at around 0.9 in sensitivity, indicating its robustness. Our results suggest the superiority of the quantum kernel, which is more stable than the classical kernel, due to its ability to efficiently capture and process complex features.
+
 <div align=center><img src="./assets/accuracy_qsvm.png" alt="accuracy_qsvm" width="500" />
 <div align=center><img src="./assets/f1_qsvm.png" alt="f1_qsvm" width="500" />
 <div align=center><img src="./assets/specificty_qsvm.png" alt="specificty_qsvm" width="500" />
 <div align=center><img src="./assets/sensitivty_qsvm.png" alt="sensitivty_qsvm" width="500" />
+### GPU Acceleration with cuQuantum for Quantum Kernel Encoding
+
 
 
 
