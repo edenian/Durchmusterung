@@ -108,7 +108,11 @@ Logistic Regression is a popular classification algorithm for binary outcomes, s
 
 ### Classical Model for Benchmarking with multi-labelled classification<a name="sec52"></a>
 
+In benchmarking, the accuracy of both Ken and LR models on two-labelled classification can reach 
 
+In the benchmarking result, we can observe that both KNN and LR models perform well for two-labelled
+classification, achieving an accuracy of around 0.86. However, when it comes to multi-labelled classification,
+the accuracy drops to 0.78 and 0.79 for KNN and LR, respectively.
 
 ![two_class_bench](./assets/two_class_bench.png)
 
