@@ -12,15 +12,15 @@
 
 [Results](#sec4)
 
-​	[Quantum Kernel Learning for Large Dataset](#sec41)
+​		[Quantum Kernel Learning for Large Dataset](#sec41)
 
-​	[GPU Acceleration with cuQuantum for Quantum Kernel Encoding](#sec42)
+​		[GPU Acceleration with cuQuantum for Quantum Kernel Encoding](#sec42)
 
 [Discussion](#sec5)
 
-​	[Classical Model for Benchmarking with two-labelled classification](#sec51)
+​		[Classical Model for Benchmarking with two-labelled classification](#sec51)
 
-​	[Classical Model for Benchmarking with multi-labelled classification](#sec52)
+​		[Classical Model for Benchmarking with multi-labelled classification](#sec52)
 
 
 
