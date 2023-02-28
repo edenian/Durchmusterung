@@ -55,7 +55,7 @@ Quantum computing has potential in solving complex machine learning problems, bu
 
 The following figure shows the GPU speedup for kernel encoding by cuQuantum compared to CPU:
 
-<img src="./assets/runtime.png" alt="runtime" width="500" />
+<p align=center><img src="./assets/runtime.png" alt="runtime" width="500" /></p>
 
 
 
@@ -69,7 +69,7 @@ KNN is a widely used non-parametric algorithm for classification and regression 
 
  In the context of star classification, KNN has shown promising results due to its simplicity and interpretability. The performance of our KNN model on the large star dataset is shown below. Accuracy increases as K decreases, with the highest accuracy of 86.5% achieved when K = 15. We have selected K = 15 as the optimal parameter for star classification. However, the optimal value of K can vary depending on the dataset and classification problem. Nonetheless, KNN remains a simple and effective classification algorithm that can provide accurate result
 
-![knn_result](./assets/knn_result.png)
+<p align=center><img src="./assets/knn_result.png" alt="knn_result" style="zoom:150%;" /></p>
 
 #### Logistic Regression (LR)
 
